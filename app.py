@@ -7,7 +7,7 @@ def get_connection():
         conn = pyodbc.connect(
             "DRIVER={ODBC Driver 17 for SQL Server};"
             "SERVER=QHYDL2603;"   # or . , or localhost\SQLEXPRESS
-            "DATABASE=TestDB;"    # change to your DB name
+            "DATABASE=dataentry;"    # change to your DB name
             "UID=JobOwnerUser;"
             "PWD=SQL123@;"
             #here ive removed auth 
