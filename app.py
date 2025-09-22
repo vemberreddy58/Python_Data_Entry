@@ -11,6 +11,7 @@ def get_connection():
             "UID=JobOwnerUser;"
             "PWD=SQL123@;"
             "Trusted_Connection=yes;"  # Windows Auth
+            #need to remove windows auth 
         )
         return conn
     except Exception as e:
