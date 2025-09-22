@@ -9,7 +9,7 @@ def get_connection():
             "SERVER=QHYDL2603;"   # or . , or localhost\SQLEXPRESS
             "DATABASE=dataentry;"    # change to your DB name
             "UID=JobOwnerUser;"
-            "PWD=SQL123@;"
+            "PWD=SSMS123@;"
             #here ive removed auth 
         )
         return conn
