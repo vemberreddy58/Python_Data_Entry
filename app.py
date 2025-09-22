@@ -36,7 +36,7 @@ def insert_data(name, age, email):
             conn.close()
 
 # ---------- Streamlit UI ----------
-st.title("📌 Streamlit to SQL Server App")  
+st.title("Streamlit to SQL Server")  
 
 with st.form("data_form"):
     name = st.text_input("Enter Name")
