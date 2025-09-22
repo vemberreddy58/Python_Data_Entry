@@ -8,6 +8,8 @@ def get_connection():
             "DRIVER={ODBC Driver 17 for SQL Server};"
             "SERVER=QHYDL2603;"   # or . , or localhost\SQLEXPRESS
             "DATABASE=TestDB;"    # change to your DB name
+            "UID=JobOwnerUser;"
+            "PWD=SQL123@;"
             "Trusted_Connection=yes;"  # Windows Auth
         )
         return conn
@@ -34,7 +36,7 @@ def insert_data(name, age, email):
             conn.close()
 
 # ---------- Streamlit UI ----------
-st.title("📌 Streamlit to SQL Server App")
+st.title("📌 Streamlit to SQL Server App")  
 
 with st.form("data_form"):
     name = st.text_input("Enter Name")
