@@ -10,6 +10,7 @@ def get_connection():
             "DATABASE=TestDB;"    # change to your DB name
             "UID=JobOwnerUser;"
             "PWD=SQL123@;"
+            #here ive removed auth 
         )
         return conn
     except Exception as e:
