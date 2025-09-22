@@ -10,8 +10,7 @@ def get_connection():
             "DATABASE=TestDB;"    # change to your DB name
             "UID=JobOwnerUser;"
             "PWD=SQL123@;"
-            "Trusted_Connection=yes;"  # Windows Auth
-            #need to remove windows auth 
+            #here ive removed auth 
         )
         return conn
     except Exception as e:
