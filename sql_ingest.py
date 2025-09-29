@@ -25,7 +25,7 @@ fake = Faker()
 # -------------------------------------------
 # 2️⃣ Insert Customers
 # -------------------------------------------
-print("Inserting customers...")
+print("Inserting customers.")
 for _ in range(50):
     name = fake.name()
     email = fake.email()
@@ -42,7 +42,7 @@ conn.commit()
 # -------------------------------------------
 # 3️⃣ Insert Products
 # -------------------------------------------
-print("Inserting products...")
+print("Inserting products.")
 products = [
     ("Laptop", "Electronics", "Computers", 500, 750),
     ("Headphones", "Electronics", "Accessories", 30, 50),
@@ -63,7 +63,7 @@ conn.commit()
 # -------------------------------------------
 # 4️⃣ Insert Stores
 # -------------------------------------------
-print("Inserting stores...")
+print("Inserting stores.")
 store_locations = [
     ("New York", "Robert Brown"),
     ("Los Angeles", "Emily Davis"),
@@ -82,7 +82,7 @@ conn.commit()
 # -------------------------------------------
 # 5️⃣ Insert Sales Transactions
 # -------------------------------------------
-print("Inserting sales...")
+print("Inserting sales.")
 
 # Get existing IDs for foreign key relationships
 cursor.execute("SELECT ProductID FROM stg.Products")
@@ -115,7 +115,9 @@ conn.commit()
 # -------------------------------------------
 # ✅ Finish Up
 # -------------------------------------------
-print("✅ Data successfully inserted into staging tables!")
+print("✅ Data successfully inserted into staging !")
 
 cursor.close()
 conn.close()
+
+
