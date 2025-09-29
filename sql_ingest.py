@@ -82,7 +82,7 @@ conn.commit()
 # -------------------------------------------
 # 5️⃣ Insert Sales Transactions
 # -------------------------------------------
-print("Inserting sales.")
+print("Insert sales.")
 
 # Get existing IDs for foreign key relationships
 cursor.execute("SELECT ProductID FROM stg.Products")
@@ -115,7 +115,7 @@ conn.commit()
 # -------------------------------------------
 # ✅ Finish Up
 # -------------------------------------------
-print("✅ Data successfully inserted into staging !")
+print("✅ Data successfully inserted into staging ")
 
 cursor.close()
 conn.close()
